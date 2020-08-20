@@ -7,7 +7,7 @@
 	    address="${cxf.endpoint.soap}/StoresWS"
         endpointName="StoresWSPort" id="wsStores" serviceClass="com.redhat.service.Stores"/>
     <bean
-        class="org.springframework.boot.context.embedded.ServletRegistrationBean" id="camelServlet">
+        class="org.springframework.boot.web.servlet.ServletRegistrationBean" id="camelServlet">
         <property name="name" value="CamelServlet"/>
         <property name="loadOnStartup" value="1"/>
         <property name="servlet">
